@@ -17,10 +17,10 @@ module Spaceship
       attr_accessor :violence_cartoon_or_fantasy
       attr_accessor :violence_realistic_prolonged_graphic_or_sadistic
       attr_accessor :violence_realistic
+      attr_accessor :age_rating_override
 
       # Boolean
       attr_accessor :gambling
-      attr_accessor :seventeen_plus
       attr_accessor :unrestricted_web_access
 
       # KidsAge
@@ -28,6 +28,7 @@ module Spaceship
 
       # Deprecated as of App Store Connect API 1.3
       attr_accessor :gambling_and_contests
+      attr_accessor :seventeen_plus
 
       module Rating
         NONE = "NONE"
@@ -48,7 +49,6 @@ module Spaceship
         "gamblingSimulated" => "gambling_simulated",
         "medicalOrTreatmentInformation" => "medical_or_treatment_information",
         "profanityOrCrudeHumor" => "profanity_or_crude_humor",
-        "seventeenPlus" => "seventeen_plus",
         "sexualContentGraphicAndNudity" => "sexual_content_graphic_and_nudity",
         "sexualContentOrNudity" => "sexual_content_or_nudity",
         "horrorOrFearThemes" => "horror_or_fear_themes",
@@ -58,9 +58,11 @@ module Spaceship
         "violenceRealisticProlongedGraphicOrSadistic" => "violence_realistic_prolonged_graphic_or_sadistic",
         "violenceRealistic" => "violence_realistic",
         "kidsAgeBand" => "kids_age_band",
+        "ageRatingOverride" => "age_rating_override",
 
         # Deprecated as of App Store Connect API 1.3
         "gamblingAndContests" => "gambling_and_contests",
+        "seventeenPlus" => "seventeen_plus",
       })
 
       def self.type
